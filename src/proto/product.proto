@@ -1,0 +1,15 @@
+syntax = "proto3";
+package product;
+
+import public "product.message.proto";
+
+service Product {
+    rpc CreateProduct (ProductItem) returns (ProductItem);
+    rpc ReadProduct (ProductId) returns (ProductItem);
+    rpc ReadProducts (VoidParam) returns (ProductItems);
+    rpc UpdateProduct(ProductItem) returns (ProductItem);
+    rpc DeleteProduct (ProductId) returns (DeleteProductResponse);
+    rpc GetProductStreamByServer (ProductItem) returns (stream ProductItem);
+    rpc GetProductSreamByClient (stream ProductItem) returns (ProductItem);
+    rpc GetProductSreamByClientAndServer (stream ProductItem) returns (stream ProductItem);
+}
