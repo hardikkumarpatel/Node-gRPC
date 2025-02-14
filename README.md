@@ -13,16 +13,16 @@ API: CRUD endpoints using gRPC
 Installation
 
 # Clone the repository
-git clone https://github.com/yourusername/node-gRPC.git
-cd node-gRPC
+```git clone https://github.com/yourusername/node-gRPC.git```
+```cd node-gRPC```
 
 # Install dependencies
-npm install
+```npm install```
 
 Running the Project
 
 # Start the gRPC server
-npm run dev
+```npm run dev```
 
 Usage
 
